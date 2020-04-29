@@ -11,12 +11,12 @@
 wget -P $HOME/Downloads https://downloads.arduino.cc/arduino-1.8.12-linuxarm.tar.xz
 tar -xvf $HOME/Downloads/arduino-1.8.12-linuxarm.tar.xz -C $HOME
 cd $HOME/arduino-1.8.12/
-mkdir tools/ArduBlockTool/tool
+mkdir -p tools/ArduBlockTool/tool
 sudo ./install.sh
 
 
 wget -P $HOME/arduino-1-8-12/tools/ArduBlockTool/tool \
-    https://github.com/BarnabasRobotics/BarnabasRoboticsArdublock-2019/raw/master/bin/ardublock-all-withNewPing.jar
+  https://raw.githubusercontent.com/BarnabasRobotics/BarnabasRoboticsArdublock-2019/master/bin/ardublock-all-withNewPing.jar
 
 wget -P $HOME/Downloads https://bitbucket.org/teckel12/arduino-new-ping/downloads/NewPing_v1.9.1.zip
 xarchiver -x $HOME/arduino-1.8.12/libraries $HOME/Downloads/NewPing_v1.9.1.zip
