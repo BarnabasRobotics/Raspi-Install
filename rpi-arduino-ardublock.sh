@@ -41,9 +41,15 @@ if [ ! -d "$HOME/arduino-1.8.12/libraries/NewPing" ]; then
     xarchiver -x $HOME/arduino-1.8.12/libraries $HOME/Downloads/NewPing_v1.9.1.zip
 fi
 
-echo "$(tput setaf 2)Done! $(tput dim)To uninstall run: $(tput setaf 3)cd ~/arduino-1.8.12 ; sudo . ./uninstall$(tput sgr0)"
+echo "$(tput setaf 2)Done! 
+$(tput dim)To uninstall run: 
+$(tput setaf 3)cd ~/arduino-1.8.12 ; 
+sudo . ./uninstall$(tput sgr0)"
+
+echo "$(tput setaf 6)
 # It might happen that, you will get an error “Error opening serial port”
 # while uploading a sketch after you have selected your board and the serial port.
 # To fix this error, run the following command
 
 # sudo usermod -a -G dialout $USER
+$(tput sgr0)"
